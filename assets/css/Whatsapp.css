@@ -4,7 +4,7 @@
 	height:60px;
 	bottom:90px;
 	right:40px;
-	background-color:#25d366;
+	background-color:#d32525;
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
@@ -14,7 +14,7 @@
 }
 .float:hover {
 	text-decoration: none;
-	color: #25d366;
+	color: #d32525;
   background-color:#fff;
 }
 

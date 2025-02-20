@@ -1,0 +1,74 @@
+/* Estilos generales para los botones flotantes */
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    right: 40px;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Botón de WhatsApp */
+.whatsapp {
+    bottom: 80px;
+    background-color: #25d366; /* Verde WhatsApp */
+}
+
+.whatsapp:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+/* Botón de Facebook */
+.facebook {
+    bottom: 150px; /* Para que no se encimen */
+    background-color: #1877f2; /* Azul Facebook */
+	
+}
+
+.facebook:hover {
+	text-decoration: none;
+	color: #1877f2;
+  background-color:#fff;
+}
+
+/* Botón de Instagram */
+.instagram {
+    bottom: 220px;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: white; /* Color del icono */
+}
+
+.instagram:hover {
+    text-decoration: none;
+    color: #cc2366; /* Color principal de Instagram */
+    background: #fff; /* Fondo blanco */
+}
+
+
+/* Botón de TikTok */
+.tiktok {
+    bottom: 290px;
+    background-color: #000;
+}
+
+.tiktok:hover {
+    text-decoration: none;
+	color: #000;
+  	background-color:#fff;
+}
+
+/* Iconos centrados */
+.my-float {
+    margin-top: 3px;
+}
