@@ -58,6 +58,21 @@
   
 }
 
+/*----------------------imagen se mueve con puntero----------------------------------------*/
+.imagenZoom{
+  margin: auto;
+  cursor: pointer;
+  transition: 4s;
+}
+
+.imagenZoom:hover{
+  transform: scale(1.1);
+  transition: 4s;
+
+}
+
+/*----------------------fin imagen se mueve con puntero----------------------------------------*/
+
 /*.imagenFondo{
   background-image: url("../img/fondo_b.png");
   background-repeat: no-repeat;
@@ -808,6 +823,8 @@ h6 {
   padding-right: 10px;
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
+
+
 
 /*--------------------------------------------------------------
 # Global Sections
