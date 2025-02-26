@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -41,33 +43,33 @@
 </head>
 
 <body class="index-page">
-  
-      <!-- Botón flotante de WhatsApp 
+
+  <!-- Botón flotante de WhatsApp 
       <a href="https://api.whatsapp.com/send?phone=5545540843&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20IMCUFIDECH%20" 
          class="float whatsapp" target="_blank">
           <i class="fa fa-whatsapp my-float"></i>
       </a>-->
 
-      <!-- Botón flotante de WhatsApp -->
-      <!--<a href="https://api.whatsapp.com/send?phone=5545540843&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20IMCUFIDECH%20" 
+  <!-- Botón flotante de WhatsApp -->
+  <!--<a href="https://api.whatsapp.com/send?phone=5545540843&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20IMCUFIDECH%20" 
          class="float whatsapp" target="_blank">
           <i class="fa fa-whatsapp my-float"></i>-->
-      <!--</a>-->
-  
-      <!-- Botón flotante de Facebook Messenger -->
-      <!--<a href="https://www.facebook.com/imcufidechimal/?locale=es_LA" class="float facebook" target="">
+  <!--</a>-->
+
+  <!-- Botón flotante de Facebook Messenger -->
+  <!--<a href="https://www.facebook.com/imcufidechimal/?locale=es_LA" class="float facebook" target="">
           <i class="fa fa-facebook my-float"></i>
       </a>
   
       <!-- Botón flotante de Instagram -->
-      <!--<a href="https://www.instagram.com/imcufidech/" class="float instagram" target="">
+  <!--<a href="https://www.instagram.com/imcufidech/" class="float instagram" target="">
           <i class="bi bi-instagram my-float"></i>
       </a>
   
       <!-- Botón flotante de TikTok -->
-      <a href="https://www.tiktok.com/@imcufidech" class="float tiktok" target="">
-          <i class="bi bi-tiktok my-float"></i> <!-- Icono de TikTok usando el de música -->
-      </a>
+  <a href="https://www.tiktok.com/@imcufidech" class="float tiktok" target="">
+    <i class="bi bi-tiktok my-float"></i> <!-- Icono de TikTok usando el de música -->
+  </a>
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
@@ -75,17 +77,25 @@
       <a class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/LOGO_C.png" alt="">
-        <h1 class="sitename" style="color: white" >IMCUFIDECH</h1>
+        <h1 class="sitename" style="color: white">IMCUFIDECH</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#index.html" class="active">Inicio</a></li>
           <li><a href="historia.html">Historia</a></li>
-          <li><a href="oferta.html">Oferta</a></li>
-          <li><a href="#pricing.html">Espacios</a></li>    
+          <li class="dropdown"><a href="#oferta.html"><span>Oferta</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
+            <ul>
+              <li><a href="oferta.html">Disciplinas Gratuitas</a></li>
+              <li><a href="ofertaAcuatica.html">Disciplinas Acuáticas</a></li>
+            </ul>
+          </li>
+          <li><a href="#pricing.html">Espacios</a></li>
           <li><a href="contact.html">Contactanos</a></li>
-          <li class="dropdown"><a href="#about.html"><span>Más</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#about.html"><span>Más</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#team.html">Más</a></li>
               <li><a href="#testimonials.html">Más</a></li>
@@ -108,7 +118,7 @@
 
     </div>
   </header>
-  
+
 
   <main class="main">
 
@@ -122,12 +132,13 @@
           <div class="carousel-container">
             <h2 style="height: 5%;">IMCUFIDECH</h2>
             <p>Instituto Municipal de Cultura Física y Deporte de Chimalhuacán.</p>
-            <h2 style="color: white">te da la bienvenida</h2>            
+            <h2 style="color: white">TE DA LA BIENVENIDA</h2>
             <!--<a href="#featured-services" class="btn-get-started">Get Started</a>-->
-            <a href="https://www.youtube.com/watch?v=knS3R9fbtfs&ab_channel=IMCUF%C3%8DDECH" class="glightbox pulsating-play-btn"></a>
+            <a href="https://www.youtube.com/watch?v=knS3R9fbtfs&ab_channel=IMCUF%C3%8DDECH"
+              class="glightbox pulsating-play-btn"></a>
           </div>
-          
-          
+
+
         </div><!-- End Carousel Item -->
 
         <div class="carousel-item">
@@ -136,7 +147,7 @@
           <div class="carousel-container">
             <h2>Conoce nuestra </h2>
             <h2>oferta deportiva </h2>
-            <a href="#featured-services" class="btn-get-started">Más</a>
+            <a href="oferta.html" class="btn-get-started">Más</a>
           </div>
         </div><!-- End Carousel Item -->
 
@@ -148,7 +159,7 @@
             <a href="#featured-services" class="btn-get-started">Más</a>
           </div>
         </div><!-- End Carousel Item -->
-        
+
 
         <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
@@ -166,7 +177,7 @@
 
     <!-- About Section -->
     <section id="about" class="about section">
-      
+
       <!-- Section Title -->
       <div style="height: 0mm;" class="container section-title" data-aos="fade-up">
         <h2>IMCUFIDECH</h2>
@@ -186,7 +197,7 @@
               <li><i class="bi bi-check2-circle"></i> <span>Labor.</span></li>
               <li><i class="bi bi-check2-circle"></i> <span>Compromiso.</span></li>
               <!--<li><i class="bi bi-check2-circle"></i> <span>nn</span></li>-->
-            <!--</ul>
+      <!--</ul>
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
@@ -201,8 +212,8 @@
 
     </section><!-- /About Section -->
 
-    <!-- Portfolio Details Section -->
-    <!--<section id="portfolio-details" class="portfolio-details section">
+      <!-- Portfolio Details Section -->
+      <!--<section id="portfolio-details" class="portfolio-details section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -210,7 +221,7 @@
 
           <div class="col-lg-8">
             <!--<div style="left: 25%;" class="portfolio-details-slider swiper init-swiper">centrar imagenes de carrucel-->
-            <!--<div  class="portfolio-details-slider swiper init-swiper">
+      <!--<div  class="portfolio-details-slider swiper init-swiper">
 
               <script type="application/json" class="swiper-config">
                 {
@@ -273,23 +284,23 @@
             </div>
           </div>-->
 
-        <!--</div>
+      <!--</div>
 
       </div>
 
     </section>--><!-- /Portfolio Details Section -->
 
-    <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
+      <!-- Portfolio Details Section -->
+      <section id="portfolio-details" class="portfolio-details section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
+          <div class="row gy-4">
 
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper init-swiper">
 
-              <script type="application/json" class="swiper-config">
+                <script type="application/json" class="swiper-config">
                 {
                   "loop": true,
                   "speed": 600,
@@ -305,61 +316,61 @@
                 }
               </script>
 
-              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-wrapper align-items-center">
 
-                <div class="swiper-slide">
-                  <a href="#portfolio-details.html" title="" class="">
-                  <img src="assets/img/c.png"  alt="">
-                </a>
-                </div>
+                  <div class="swiper-slide">
+                    <a href="#portfolio-details.html" title="" class="">
+                      <img src="assets/img/c.png" alt="">
+                    </a>
+                  </div>
 
-                <div class="swiper-slide">
-                  <a href="#portfolio-details.html" title="" class="">
-                    <img src="assets/img/d.png" alt="">
-                  </a>
-                </div>
+                  <div class="swiper-slide">
+                    <a href="#portfolio-details.html" title="" class="">
+                      <img src="assets/img/d.png" alt="">
+                    </a>
+                  </div>
 
-                <div class="swiper-slide">
-                  <a href="#portfolio-details.html" title="" class="">
-                    <img src="assets/img/c.png" alt="">
-                  </a>
-                </div>
+                  <div class="swiper-slide">
+                    <a href="#portfolio-details.html" title="" class="">
+                      <img src="assets/img/c.png" alt="">
+                    </a>
+                  </div>
 
-                <div class="swiper-slide">
-                  <a href="#portfolio-details.html" title="" class="">
-                    <img src="assets/img/d.png"  height="auto" alt="">
-                  </a>
+                  <div class="swiper-slide">
+                    <a href="#portfolio-details.html" title="" class="">
+                      <img src="assets/img/d.png" height="auto" alt="">
+                    </a>
+                  </div>
+
                 </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+                <h3>Artículos</h3>
+                <ul>
+                  <li><strong>Categoria</strong>: Cultural</li>
+                  <li><strong>Ubicanion</strong>: Centro de Chimalhuacán</li>
+                  <li><strong>Fecha</strong>: 01 Marzo 2025</li>
+                </ul>
+              </div>
+              <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
 
               </div>
-              <div class="swiper-pagination"></div>
             </div>
-          </div>
 
-          <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Artículos</h3>
-              <ul>
-                <li><strong>Categoria</strong>: Cultural</li>
-                <li><strong>Ubicanion</strong>: Centro de Chimalhuacán</li>
-                <li><strong>Fecha</strong>: 01 Marzo 2025</li>
-              </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              
-            </div>
           </div>
 
         </div>
 
-      </div>
+      </section><!-- /Portfolio Details Section -->
 
-    </section><!-- /Portfolio Details Section -->
 
-    
-    
-    <!-- Services Section -->
-    <!--<section id="services" class="services section">
+
+      <!-- Services Section -->
+      <!--<section id="services" class="services section">
 
       <!-- Section Title -->
       <!--<div class="container section-title" data-aos="fade-up">
@@ -381,7 +392,7 @@
             </div>
           </div><!-- End Service Item -->
 
-          <!--<div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+      <!--<div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item d-flex position-relative h-100">
               <img src="assets/img/estadio.gif" height="80px" alt="" >
               <div>
@@ -391,7 +402,7 @@
             </div>
           </div><!-- End Service Item -->
 
-          <!--<div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+      <!--<div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-bar-chart icon flex-shrink-0"></i>
               <div>
@@ -401,7 +412,7 @@
             </div>
           </div><!-- End Service Item -->
 
-          <!--<div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+      <!--<div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-binoculars icon flex-shrink-0"></i>
               <div>
@@ -411,7 +422,7 @@
             </div>
           </div><!-- End Service Item -->
 
-          <!--<div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+      <!--<div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-brightness-high icon flex-shrink-0"></i>
               <div>
@@ -421,7 +432,7 @@
             </div>
           </div><!-- End Service Item -->
 
-          <!--<div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
+      <!--<div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-calendar4-week icon flex-shrink-0"></i>
               <div>
@@ -432,65 +443,73 @@
             </div>
           </div><!-- End Service Item -->
 
-        <!--</div>
+      <!--</div>
 
       </div>
 
     </section>--><!-- /Services Section -->
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>IMCUFIDECH</h2>
-        <p>Conoce a nuestros atletas</p>
-      </div><!-- End Section Title -->
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>IMCUFIDECH</h2>
+          <p>Conoce a nuestros atletas</p>
+        </div><!-- End Section Title -->
 
-      <div class="container">
+        <div class="container">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">Todos</li>
-            <li data-filter=".filter-app">Natacion en quipo</li>
-            <li data-filter=".filter-product">Natacion ritmica</li>
-            <li data-filter=".filter-branding">cien metros libres</li>
-          </ul><!-- End Portfolio Filters -->
+            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter="*" class="filter-active">Todos</li>
+              <li data-filter=".filter-app">Natacion en quipo</li>
+              <li data-filter=".filter-product">Natacion ritmica</li>
+              <li data-filter=".filter-branding">cien metros libres</li>
+            </ul><!-- End Portfolio Filters -->
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/natacion/GALERIA-223.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>IMCUFIDECH </h4>
-                <p>Equipo natacion </p>
-                <a href="assets/img/natacion/GALERIA-223.jpg" title="Branding 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#portfolio-details.html" title="Más detalles" class="details-link"><i class="bi bi-lightning"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <img src="assets/img/natacion/GALERIA-223.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>IMCUFIDECH </h4>
+                  <p>Equipo natacion </p>
+                  <a href="assets/img/natacion/GALERIA-223.jpg" title="Branding 1" data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#portfolio-details.html" title="Más detalles" class="details-link"><i
+                      class="bi bi-lightning"></i></a>
+                </div>
+              </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/natacion/GALERIA-234.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>IMCUFIDECH</h4>
-                <p>....</p>
-                <a href="assets/img/natacion/GALERIA-234.jpg" title="Navidad con IMCUFIDECH" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <img src="assets/img/natacion/GALERIA-234.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>IMCUFIDECH</h4>
+                  <p>....</p>
+                  <a href="assets/img/natacion/GALERIA-234.jpg" title="Navidad con IMCUFIDECH"
+                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="#portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/natacion/GALERIA-236.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>IMCUFIDECH</h4>
-                <p>....</p>
-                <a href="assets/img/natacion/GALERIA-229.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                <img src="assets/img/natacion/GALERIA-236.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>IMCUFIDECH</h4>
+                  <p>....</p>
+                  <a href="assets/img/natacion/GALERIA-229.jpg" title="Branding 1"
+                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="#portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div><!-- End Portfolio Item -->
 
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>App 2</h4>
@@ -500,7 +519,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Product 2</h4>
@@ -510,7 +529,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Branding 2</h4>
@@ -520,7 +539,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>App 3</h4>
@@ -530,7 +549,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Product 3</h4>
@@ -540,7 +559,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Branding 3</h4>
@@ -550,67 +569,73 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-          </div><!-- End Portfolio Container -->
+            </div><!-- End Portfolio Container -->
+
+          </div>
 
         </div>
 
-      </div>
+      </section><!-- /Portfolio Section -->
 
-    </section><!-- /Portfolio Section -->
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section">
 
-     <!-- Portfolio Section -->
-     <section id="portfolio" class="portfolio section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>IMCUFIDECH</h2>
+          <p>IMCUFIDECH invita</p>
+        </div><!-- End Section Title -->
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>IMCUFIDECH</h2>
-        <p>IMCUFIDECH invita</p>
-      </div><!-- End Section Title -->
+        <div class="container">
 
-      <div class="container">
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter="*" class="filter-active">Todos</li>
+              <li data-filter=".filter-app">Proximos</li>
+              <li data-filter=".filter-product">Tradiciones</li>
+              <li data-filter=".filter-branding">Web</li>
+            </ul><!-- End Portfolio Filters -->
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">Todos</li>
-            <li data-filter=".filter-app">Proximos</li>
-            <li data-filter=".filter-product">Tradiciones</li>
-            <li data-filter=".filter-branding">Web</li>
-          </ul><!-- End Portfolio Filters -->
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <img src="assets/img/f.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>IMCUFIDECH <br> invita</h4>
+                  <p>Disfrutemos del dia de muertos</p>
+                  <a href="assets/img/f.png" title="Branding 1" data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#portfolio-details.html" title="Más detalles" class="details-link"><i
+                      class="bi bi-lightning"></i></a>
+                </div>
+              </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/f.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>IMCUFIDECH <br> invita</h4>
-                <p>Disfrutemos del dia de muertos</p>
-                <a href="assets/img/f.png" title="Branding 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#portfolio-details.html" title="Más detalles" class="details-link"><i class="bi bi-lightning"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                <img src="assets/img/g.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>IMCUFIDECH</h4>
+                  <p>....</p>
+                  <a href="assets/img/g.jpg" title="Navidad con IMCUFIDECH" data-gallery="portfolio-gallery-product"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/g.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>IMCUFIDECH</h4>
-                <p>....</p>
-                <a href="assets/img/g.jpg" title="Navidad con IMCUFIDECH" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                <img src="assets/img/f.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>IMCUFIDECH</h4>
+                  <p>....</p>
+                  <a href="assets/img/f.png" title="Branding 1" data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/f.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>IMCUFIDECH</h4>
-                <p>....</p>
-                <a href="assets/img/f.png" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="#portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>App 2</h4>
@@ -620,7 +645,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Product 2</h4>
@@ -630,7 +655,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Branding 2</h4>
@@ -640,7 +665,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>App 3</h4>
@@ -650,7 +675,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Product 3</h4>
@@ -660,7 +685,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <!--<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Branding 3</h4>
@@ -670,13 +695,13 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-          </div><!-- End Portfolio Container -->
+            </div><!-- End Portfolio Container -->
+
+          </div>
 
         </div>
 
-      </div>
-
-    </section><!-- /Portfolio Section -->
+      </section><!-- /Portfolio Section -->
 
   </main>
 
@@ -691,8 +716,8 @@
       <div class="row gy-4">
 
         <div class="col-xl-2 col-md-3 col-6 client-logo">
-          
-          <a href="https://chimalhuacan.gob.mx" >
+
+          <a href="https://chimalhuacan.gob.mx">
             <img src="assets/img/LOGO_C.png" class="img-fluid" alt="">
           </a>
         </div><!-- End Client Item -->
@@ -774,9 +799,9 @@
           <form action="forms/newsletter.php" method="post" class="php-email-form">
             <section id="about" class="about section">
               <a href="contact.html" class="read-more"><span>Como llegar</span><i class="bi bi-arrow-right"></i></a>
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
           </form>
         </div>
 
@@ -790,14 +815,16 @@
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Derechos <a href="#https://bootstrapmade.com/">IMCUFIDECH</a> Derechos <a href=“#https://themewagon.com>IMCUFIDECH
+        Derechos <a href="#https://bootstrapmade.com/">IMCUFIDECH</a> Derechos <a
+          href=“#https://themewagon.com>IMCUFIDECH
       </div>
     </div>
 
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>

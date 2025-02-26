@@ -34,7 +34,7 @@
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #556270; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #d9232d; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #D9B4A7; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -877,7 +877,7 @@ section,
 /*Ajustar tamaño de imagen de carrucel*/
 .hero .carousel {
   width: 100%;
-  min-height: calc(50vh - 90px);
+  min-height: calc(100vh - 90px);
   padding: 0;
   margin: 0;
   background-color: var(--background-color);
@@ -887,7 +887,7 @@ section,
 /*Ajustar tamaño de imagen de carrucel de mobil*/
 @media (max-width: 1200px) {
   .hero .carousel {
-    min-height: calc(40vh - 66px);
+    min-height: calc(100vh - 66px);
   }
 }
 
