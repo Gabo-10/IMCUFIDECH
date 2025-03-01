@@ -1,36 +1,39 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';  // Cambia a tu correo real
+require '../vendor/autoload.php'; // Asegúrate de que PHPMailer se cargue correctamente
 
-  // Incluir la librería PHP Email Form
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $mail = new PHPMailer(true);
 
-  // Crear el objeto de contacto
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;  // Activar AJAX para enviar el formulario sin recargar la página
-  
-  // Asignar los datos del formulario
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+    try {
+        // Configuración del servidor SMTP
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com'; // Cambia si usas otro proveedor
+        $mail->SMTPAuth = true;
+        $mail->Username = 'mlg.t.8020@gmail.com'; // Cambia por tu correo
+        $mail->Password = 'tu-contraseña-o-app-password'; // Usa una App Password si es Gmail
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = 587;
 
-  // Agregar los mensajes del formulario
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
+        // Configurar destinatarios
+        $mail->setFrom($_POST['email'], $_POST['name']);
+        $mail->addAddress('mlg.t.8020@gmail.com'); // Cambia al destinatario real
 
-  // Enviar el correo
-  echo $contact->send();
+        // Configurar contenido
+        $mail->isHTML(true);
+        $mail->Subject = $_POST['subject'];
+        $mail->Body    = "<strong>Mensaje:</strong> " . nl2br($_POST['message']);
+
+        // Enviar el correo
+        $mail->send();
+        echo 'Mensaje enviado correctamente.';
+    } catch (Exception $e) {
+        echo "Error al enviar el mensaje: {$mail->ErrorInfo}";
+    }
+} else {
+    http_response_code(405);
+    echo "Método no permitido";
+}
 ?>
